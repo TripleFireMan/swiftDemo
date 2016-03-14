@@ -10,3 +10,7 @@ import Foundation
 
 print("Hello, World!")
 
+var messageName:String
+messageName = "wo ai beijing tian an meng"
+
+print(messageName)
