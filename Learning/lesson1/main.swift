@@ -92,3 +92,23 @@ switch color
         print(11)
 }
 
+//swift 中进行一个字典的遍历操作
+let prime = "Prime"
+let fibonacii = "Fibonacii"
+let square = "Square"
+let interesting_numbers = [prime:[2,3,5,7,11,13],
+                       fibonacii:[1,1,2,3,5,8],
+                          square:[1,4,9,16,25]] //这是一个保存有趣的数字的字典
+var largest = 0
+
+for (key,values) in interesting_numbers {
+    for value in values {
+        if value >  largest {
+            largest = value
+        }
+    }
+}
+
+print("largest = \(largest)")
+
+
