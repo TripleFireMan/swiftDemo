@@ -111,4 +111,40 @@ for (key,values) in interesting_numbers {
 
 print("largest = \(largest)")
 
+//swift 中的while 控制语句
+
+var n = 2
+while n < 100 {
+    n = n * 2
+}
+
+print("n = \(n)")
+
+var m = 2
+repeat {
+    m *= 2
+}while m < 100
+print("m = \(m)")
+
+var first_for_loop = 0
+for i in 0..<4 {
+    first_for_loop += i
+}
+
+print(first_for_loop)
+
+var second_for_loop = 0
+
+for var i = 0; i < 4; i++ {
+    second_for_loop += i
+}
+
+print(second_for_loop)
+
+func greeting (name:String, day:String)->String{
+    return "Hello \(name), today is \(day)"
+}
+
+print(greeting("chengyan", day: "20160314"))
+
 
