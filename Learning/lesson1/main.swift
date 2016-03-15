@@ -263,3 +263,51 @@ print(ns)
 print(l)
 print(ms)
 print(sort)
+
+//类的简单使用
+var shape = Shape()
+var newshape = NewShape(name: "fang")
+shape.numbers_of_side = 10
+
+print(shape.simpleDescription())
+print(newshape.simpleDescription())
+
+//矩形
+var sq = Square(sideLength: 20.0,name: "矩形")
+print("sq.area = \(sq.area())")
+print("sq = \(sq.simpleDescription())")
+
+//圆
+var circle = Circle.init(radius: 5, name: "snajiaoban")
+print(circle.area())
+print(circle.simpleDescription())
+
+//等边三角形
+var triangle = EquilateralTriangle(sideLength: 15, name: "等边三角形")
+print(triangle.perimeter)
+triangle.perimeter = 9
+print(triangle.side_length)
+
+//等边三角形和矩形
+var triangleAndSquare = TriangleAndSquare(sideLength: 20, name: "erheyi")
+print(triangleAndSquare.triangle.side_length)
+print(triangleAndSquare.square.sideLength)
+triangleAndSquare.square = Square(sideLength: 10, name: "juxing")
+print(triangleAndSquare.triangle.side_length)
+
+//枚举
+let ace = Rank.ace
+let acerowvalue = ace.rawValue
+print(ace.simpleDescription())
+print(ace.rawValue)
+
+let suit :Suit = .Hearts
+let heartDescription = suit.simpleDescription()
+print(heartDescription)
+
+
+//结构体
+
+let threeOfSpades = Card(rank:.three,suit:.Spades)
+let threeOfSpadesDescription = threeOfSpades.simpleDescription();
+print(threeOfSpadesDescription)

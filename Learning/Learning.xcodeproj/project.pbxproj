@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CCA24051C97DE320002D0FD /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA24041C97DE320002D0FD /* Shape.swift */; };
+		4CCA24071C97F49D0002D0FD /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA24061C97F49D0002D0FD /* Rank.swift */; };
+		4CCA24091C97F8780002D0FD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA24081C97F8780002D0FD /* File.swift */; };
+		4CCA240B1C97FBAF0002D0FD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA240A1C97FBAF0002D0FD /* Card.swift */; };
 		4CCAD0511C8D7E94008E8981 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCAD0501C8D7E94008E8981 /* main.swift */; };
 		4CCAD05E1C8D7EBB008E8981 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCAD05D1C8D7EBB008E8981 /* main.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +37,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4CCA24041C97DE320002D0FD /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		4CCA24061C97F49D0002D0FD /* Rank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
+		4CCA24081C97F8780002D0FD /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		4CCA240A1C97FBAF0002D0FD /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		4CCAD04D1C8D7E94008E8981 /* Learning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Learning; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCAD0501C8D7E94008E8981 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4CCAD05B1C8D7EBB008E8981 /* lesson1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lesson1; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				4CCAD05D1C8D7EBB008E8981 /* main.swift */,
+				4CCA24041C97DE320002D0FD /* Shape.swift */,
+				4CCA24061C97F49D0002D0FD /* Rank.swift */,
+				4CCA24081C97F8780002D0FD /* File.swift */,
+				4CCA240A1C97FBAF0002D0FD /* Card.swift */,
 			);
 			path = lesson1;
 			sourceTree = "<group>";
@@ -177,7 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CCA24071C97F49D0002D0FD /* Rank.swift in Sources */,
+				4CCA24091C97F8780002D0FD /* File.swift in Sources */,
+				4CCA240B1C97FBAF0002D0FD /* Card.swift in Sources */,
 				4CCAD05E1C8D7EBB008E8981 /* main.swift in Sources */,
+				4CCA24051C97DE320002D0FD /* Shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +327,7 @@
 				4CCAD0561C8D7E94008E8981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CCAD05F1C8D7EBB008E8981 /* Build configuration list for PBXNativeTarget "lesson1" */ = {
 			isa = XCConfigurationList;
@@ -319,6 +336,7 @@
 				4CCAD0611C8D7EBB008E8981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
