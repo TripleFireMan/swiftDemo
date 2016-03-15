@@ -147,4 +147,119 @@ func greeting (name:String, day:String)->String{
 
 print(greeting("chengyan", day: "20160314"))
 
+/*************************一个函数告诉你元组是什么鬼**************************/
+func caculateStatistics (scores:[Int]) ->(min:Int,max:Int,sum:Int){
+   
+    var min = scores[0]
+    var max = scores[0]
+    var sum = 0
+    
+    for score in scores {
+        if  score > max {
+            max = score
+        }else if score < min {
+            min = score
+        }
+        
+        sum = score + sum
+    }
+    
+    return (min, max, sum)
+}
 
+var statistics = caculateStatistics([3,5,7,9,10])
+
+print(statistics.min)
+
+print(statistics.0)
+
+/***************************可变个数参数*************************/
+
+func sum(numbers:Int...)->Int {
+    var sum = 0
+    for number in numbers{
+        sum += number
+    }
+    return sum
+}
+
+print(sum())
+print(sum(1,2,3))
+
+func average(numbers:Int...)->Int{
+    
+    var sum = 0
+    for number in numbers{
+        sum += number
+    }
+    
+    let count = numbers.count
+    let average = sum / count
+    return average
+}
+
+print(average(1,2,3))
+
+/***************************函数可以嵌套***************************/
+
+func fifteen()->Int {
+    var y = 10
+    func add (){
+        y += 5
+    }
+    add()
+    return y
+}
+
+print("函数进行嵌套使用 fifteen() = " + "\(fifteen())")
+
+/***************************函数可以作为返回值***************************/
+func makeIncrementer()->(Int->Int){
+    //可以理解为回调
+    func addOne(number:Int)->Int {
+        return 1 + number
+    }
+    return addOne
+}
+
+var make = makeIncrementer()
+print("函数作为返回值 makeIncrementer()(10) = " + "\(makeIncrementer()(10))")//第一层括号是返回的函数，第二层括号是函数进行调用
+
+/***************************函数可以作为参数传递***************************/
+func hasAnyMatchs(numbers:[Int],contition:(Int->Bool))->Bool{
+    for number in numbers {
+        if contition(number){
+            return true
+        }
+    }
+    return false
+}
+
+func lessThanTen(number:Int)->Bool{
+    if number < 10{
+        return true
+    }else {
+        return false
+    }
+}
+
+var sco = [8,100,30,49,60]
+let anyMatch = hasAnyMatchs(sco, contition: lessThanTen)
+print("hasAnyMatchs : \(anyMatch)")
+
+//强大的swift语言体现的淋漓尽致，屌爆
+var ns = sco.map({
+    (n:Int)->String in
+    let result  = String(5 * n)
+    return result
+})
+//当闭包是最后一个参数可以直接写在括号里面
+var l = sco.map({number in number * 3})
+
+//当闭包是最后一个参数且是为一个参数是，括号也可以省略
+var ms = sco.map{number in String(number)}
+var sort = sco.sort{$0>$1}
+print(ns)
+print(l)
+print(ms)
+print(sort)
