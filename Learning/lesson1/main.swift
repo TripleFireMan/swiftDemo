@@ -32,9 +32,7 @@ print("transformNumberToStringMethod_2 = \(transformNumberToStringMethod_2)")
 
 //方法1:直接创建法
 var shops = ["家乐福","唐久","美特好"]
-
 var capitals = ["中国":"北京","日本":"东京","美国":"华盛顿"]
-
 print(shops)
 
 print(capitals["中国"])
@@ -309,5 +307,53 @@ print(heartDescription)
 //结构体
 
 let threeOfSpades = Card(rank:.three,suit:.Spades)
-let threeOfSpadesDescription = threeOfSpades.simpleDescription();
+let threeOfSpadesDescription = threeOfSpades.simpleDescription()
 print(threeOfSpadesDescription)
+
+
+//枚举（带实例值的枚举）
+
+let sunraise = ServerResponse.Result("日升", "pm 9:00")
+
+let sunset  = ServerResponse.Result("日落", "am 5:00")
+
+let error = ServerResponse.Error("网络中断")
+
+print("sunraise = \(String(sunraise))")
+print("sunset = \(String(sunset))")
+print("error = \(String(error))")
+
+switch sunraise
+{
+    case let .Result(aa,bb):
+        print(aa)
+    case let .Error(cc):
+        print(cc)
+}
+
+//先这样吧，还有点迷糊
+
+/*********************************这里是分割线*********************************/
+
+var simpleClass = SimpleClass()
+print(simpleClass.simpleDescription)
+simpleClass.adjust()
+print(simpleClass.simpleDescription)
+
+var simpleStruct = SimpleStruct()
+print(simpleStruct.simpleDescription)
+simpleStruct.adjust()
+print(simpleStruct.simpleDescription)
+
+
+var simpleEnum = SimpleEnum.Acfun("行业老大")
+print(simpleEnum.simpleDescription)
+simpleEnum.adjust()
+print(simpleEnum.simpleDescription)
+
+//泛型
+
+let zifuchuan = repeatTime("aaaaa", numberOfTime: 10)
+print(zifuchuan)
+
+

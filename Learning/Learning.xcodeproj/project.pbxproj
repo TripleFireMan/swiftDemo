@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1454E11C9A55F300ADE931 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1454E01C9A55F300ADE931 /* ServerResponse.swift */; };
+		4C1454E31C9AA5A300ADE931 /* Protocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1454E21C9AA5A300ADE931 /* Protocal.swift */; };
 		4CCA24051C97DE320002D0FD /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA24041C97DE320002D0FD /* Shape.swift */; };
 		4CCA24071C97F49D0002D0FD /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA24061C97F49D0002D0FD /* Rank.swift */; };
 		4CCA24091C97F8780002D0FD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA24081C97F8780002D0FD /* File.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C1454E01C9A55F300ADE931 /* ServerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		4C1454E21C9AA5A300ADE931 /* Protocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocal.swift; sourceTree = "<group>"; };
 		4CCA24041C97DE320002D0FD /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		4CCA24061C97F49D0002D0FD /* Rank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
 		4CCA24081C97F8780002D0FD /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				4CCA24061C97F49D0002D0FD /* Rank.swift */,
 				4CCA24081C97F8780002D0FD /* File.swift */,
 				4CCA240A1C97FBAF0002D0FD /* Card.swift */,
+				4C1454E01C9A55F300ADE931 /* ServerResponse.swift */,
+				4C1454E21C9AA5A300ADE931 /* Protocal.swift */,
 			);
 			path = lesson1;
 			sourceTree = "<group>";
@@ -190,7 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CCA24071C97F49D0002D0FD /* Rank.swift in Sources */,
+				4C1454E11C9A55F300ADE931 /* ServerResponse.swift in Sources */,
 				4CCA24091C97F8780002D0FD /* File.swift in Sources */,
+				4C1454E31C9AA5A300ADE931 /* Protocal.swift in Sources */,
 				4CCA240B1C97FBAF0002D0FD /* Card.swift in Sources */,
 				4CCAD05E1C8D7EBB008E8981 /* main.swift in Sources */,
 				4CCA24051C97DE320002D0FD /* Shape.swift in Sources */,
