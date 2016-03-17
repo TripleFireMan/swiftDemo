@@ -32,14 +32,15 @@ enum SimpleEnum:ExampleProtocol{
     case Acfun(String)
     case Bilibili(String)
     
+    
     var simpleDescription:String {
         get{
             return "简单枚举类"
         }
         set{
-//            simpleDescription = newValue
-//            newValue
-//            self.simpleDescription = newValue
+            //            simpleDescription = newValue
+            //            newValue
+            //            self.simpleDescription = newValue
         }
     }
     mutating func adjust() {
