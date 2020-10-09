@@ -55,9 +55,9 @@ class Girl {
     var height :Double
     
     func washClothes(){
-        "洗衣做饭样样通"
+        print( "洗衣做饭样样通")
     }
-    
+
     func cookmeal(){
         "会做中西各种大餐"
     }

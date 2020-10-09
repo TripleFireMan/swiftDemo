@@ -10,3 +10,11 @@ import Foundation
 
 print("Hello, World!")
 
+
+print(Girl.init().washClothes())
+var string = Shape.init().simpleDescription()
+
+print(string)
+//print(Shape.simpleDescription(Shape.init()))
+
+
